@@ -1,9 +1,8 @@
 const C3 = self.C3;
 self.C3_GetObjectRefTable = function () {
 	return [
-		C3.Plugins.Sprite,
 		C3.Plugins.Mouse,
-		C3.Plugins.video,
+		C3.Plugins.Sprite,
 		C3.Behaviors.DragnDrop,
 		C3.Plugins.Text,
 		C3.Behaviors.Tween,
@@ -15,7 +14,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.MoveAtAngle,
 		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.Mouse.Cnds.OnRelease,
-		C3.Plugins.Mouse.Cnds.IsOverObject,
 		C3.Plugins.Touch.Cnds.IsTouchingObject,
 		C3.Plugins.System.Acts.GoToLayout,
 		C3.Plugins.System.Cnds.OnLayoutStart,
@@ -30,11 +28,13 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.SetTimescale,
 		C3.Plugins.Sprite.Acts.MoveToTop,
 		C3.Plugins.Sprite.Acts.MoveToBottom,
+		C3.Plugins.Mouse.Cnds.IsOverObject,
 		C3.Plugins.System.Acts.NextPrevLayout,
-		C3.Plugins.System.Acts.ResetEventVar,
 		C3.Plugins.Audio.Acts.Stop,
+		C3.Plugins.System.Acts.ResetEventVar,
 		C3.Plugins.System.Cnds.Compare,
 		C3.Plugins.System.Exps.layoutname,
+		C3.Plugins.System.Acts.Wait,
 		C3.Plugins.Audio.Acts.PlayByName,
 		C3.Plugins.Sprite.Acts.StartAnim,
 		C3.Plugins.System.Acts.AddVar,
@@ -43,22 +43,13 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.StopAnim,
 		C3.Behaviors.DragnDrop.Cnds.OnDrop,
 		C3.Plugins.Sprite.Cnds.IsOverlapping,
-		C3.Plugins.Sprite.Acts.SetPos,
-		C3.Plugins.Sprite.Exps.X,
-		C3.Plugins.Sprite.Exps.Y,
 		C3.Plugins.Sprite.Acts.Destroy,
-		C3.Plugins.System.Acts.Wait,
-		C3.Plugins.Sprite.Acts.SetAnim,
-		C3.Plugins.Touch.Cnds.OnTouchObject
+		C3.Plugins.Sprite.Acts.SetAnim
 	];
 };
 self.C3_JsPropNameTable = [
-	{Larutan: 0},
 	{Mouse: 0},
 	{Sprite: 0},
-	{Video: 0},
-	{Video2: 0},
-	{Video3: 0},
 	{DragDrop: 0},
 	{gelas: 0},
 	{jenis: 0},
@@ -121,12 +112,8 @@ self.C3_JsPropNameTable = [
 ];
 
 self.InstanceType = {
-	Larutan: class extends self.ISpriteInstance {},
 	Mouse: class extends self.IInstance {},
 	Sprite: class extends self.ISpriteInstance {},
-	Video: class extends self.IWorldInstance {},
-	Video2: class extends self.IWorldInstance {},
-	Video3: class extends self.IWorldInstance {},
 	gelas: class extends self.ISpriteInstance {},
 	teh: class extends self.ISpriteInstance {},
 	BtnStart: class extends self.ISpriteInstance {},
