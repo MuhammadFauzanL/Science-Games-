@@ -13,8 +13,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.SetAnimFrame,
 		C3.Plugins.Sprite.Acts.MoveAtAngle,
 		C3.Plugins.Audio.Acts.Play,
-		C3.Plugins.Mouse.Cnds.OnRelease,
-		C3.Plugins.Touch.Cnds.IsTouchingObject,
 		C3.Plugins.System.Acts.GoToLayout,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.System.Acts.SetVar,
@@ -28,6 +26,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.SetTimescale,
 		C3.Plugins.Sprite.Acts.MoveToTop,
 		C3.Plugins.Sprite.Acts.MoveToBottom,
+		C3.Plugins.Mouse.Cnds.OnRelease,
 		C3.Plugins.Mouse.Cnds.IsOverObject,
 		C3.Plugins.System.Acts.NextPrevLayout,
 		C3.Plugins.Audio.Acts.Stop,
@@ -61,7 +60,6 @@ self.C3_JsPropNameTable = [
 	{Tween: 0},
 	{Text: 0},
 	{BtnMusic: 0},
-	{Sprite5: 0},
 	{Audio: 0},
 	{Sprite9: 0},
 	{spr: 0},
@@ -105,6 +103,7 @@ self.C3_JsPropNameTable = [
 	{air_ujicoba: 0},
 	{vid: 0},
 	{Touch: 0},
+	{bgg: 0},
 	{InfoOn: 0},
 	{MusicOn: 0},
 	{SectionIndex: 0},
@@ -122,7 +121,6 @@ self.InstanceType = {
 	information: class extends self.ISpriteInstance {},
 	Text: class extends self.ITextInstance {},
 	BtnMusic: class extends self.ISpriteInstance {},
-	Sprite5: class extends self.ISpriteInstance {},
 	Audio: class extends self.IInstance {},
 	Sprite9: class extends self.ISpriteInstance {},
 	spr: class extends self.ISpriteInstance {},
@@ -165,5 +163,6 @@ self.InstanceType = {
 	jeruk_uji_coba: class extends self.ISpriteInstance {},
 	air_ujicoba: class extends self.ISpriteInstance {},
 	vid: class extends self.ISpriteInstance {},
-	Touch: class extends self.IInstance {}
+	Touch: class extends self.IInstance {},
+	bgg: class extends self.ISpriteInstance {}
 }
