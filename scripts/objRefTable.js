@@ -36,22 +36,17 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.SetTimescale,
 		C3.Plugins.Sprite.Acts.MoveToTop,
 		C3.Plugins.Sprite.Acts.MoveToBottom,
-		C3.Plugins.System.Acts.NextPrevLayout,
 		C3.Plugins.System.Acts.ResetEventVar,
+		C3.Plugins.System.Acts.NextPrevLayout,
 		C3.Plugins.Audio.Acts.PlayByName,
-		C3.Plugins.System.Acts.WaitForPreviousActions,
-		C3.Plugins.Mouse.Cnds.OnRelease,
-		C3.Plugins.Mouse.Cnds.IsOverObject,
-		C3.Plugins.Sprite.Acts.StartAnim,
-		C3.Plugins.Mouse.Cnds.OnObjectClicked,
 		C3.Plugins.System.Acts.AddVar,
-		C3.Plugins.Text.Acts.SetText,
-		C3.Plugins.Arr.Exps.At,
-		C3.Plugins.Sprite.Acts.StopAnim,
+		C3.Behaviors.Tween.Acts.TweenTwoProperties,
+		C3.Plugins.Sprite.Acts.StartAnim,
 		C3.Behaviors.DragnDrop.Cnds.OnDrop,
 		C3.Plugins.Sprite.Cnds.IsOverlapping,
 		C3.Plugins.Sprite.Acts.Destroy,
 		C3.Plugins.Sprite.Acts.SetAnim,
+		C3.Plugins.Sprite.Acts.StopAnim,
 		C3.Plugins.Sprite.Cnds.OnCollision,
 		C3.Plugins.System.Acts.GoToLayoutByName
 	];
@@ -148,10 +143,21 @@ self.C3_JsPropNameTable = [
 	{tujuan: 0},
 	{C: 0},
 	{textJawabanna: 0},
+	{Sprite24: 0},
+	{Sprite25: 0},
+	{Sprite26: 0},
+	{Sprite27: 0},
+	{Sprite28: 0},
+	{Sprite29: 0},
+	{Sprite30: 0},
+	{Sprite31: 0},
+	{Sprite32: 0},
+	{Sprite33: 0},
 	{InfoOn: 0},
 	{MusicOn: 0},
-	{SectionIndex: 0},
-	{Ujicoba: 0}
+	{progress: 0},
+	{Ujicoba: 0},
+	{Waiting: 0}
 ];
 
 self.InstanceType = {
@@ -239,5 +245,15 @@ self.InstanceType = {
 	JAWABAN: class extends self.ITextInstance {},
 	TEXTJAWABAN: class extends self.ITextInstance {},
 	C: class extends self.ISpriteInstance {},
-	textJawabanna: class extends self.ITextInstance {}
+	textJawabanna: class extends self.ITextInstance {},
+	Sprite24: class extends self.ISpriteInstance {},
+	Sprite25: class extends self.ISpriteInstance {},
+	Sprite26: class extends self.ISpriteInstance {},
+	Sprite27: class extends self.ISpriteInstance {},
+	Sprite28: class extends self.ISpriteInstance {},
+	Sprite29: class extends self.ISpriteInstance {},
+	Sprite30: class extends self.ISpriteInstance {},
+	Sprite31: class extends self.ISpriteInstance {},
+	Sprite32: class extends self.ISpriteInstance {},
+	Sprite33: class extends self.ISpriteInstance {}
 }
