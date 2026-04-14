@@ -155,6 +155,10 @@ self.C3_JsPropNameTable = [
 	{Sprite33: 0},
 	{Sprite34: 0},
 	{Sprite35: 0},
+	{Sprite36: 0},
+	{Sprite37: 0},
+	{QRCode2: 0},
+	{Sprite38: 0},
 	{InfoOn: 0},
 	{MusicOn: 0},
 	{progress: 0},
@@ -259,5 +263,9 @@ self.InstanceType = {
 	Sprite32: class extends self.ISpriteInstance {},
 	Sprite33: class extends self.ISpriteInstance {},
 	Sprite34: class extends self.ISpriteInstance {},
-	Sprite35: class extends self.ISpriteInstance {}
+	Sprite35: class extends self.ISpriteInstance {},
+	Sprite36: class extends self.ISpriteInstance {},
+	Sprite37: class extends self.ISpriteInstance {},
+	QRCode2: class extends self.IQRCodeInstance {},
+	Sprite38: class extends self.ISpriteInstance {}
 }
