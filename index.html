@@ -44,23 +44,6 @@ if (location.protocol.substr(0, 4) === "file")
 	<script src="scripts/offlineclient.js" type="module"></script>
 	<script src="scripts/main.js" type="module"></script>
 	<script src="scripts/register-sw.js" type="module"></script>
-	<script>
-		// Auto-reload when service worker updates
-		if ('serviceWorker' in navigator) {
-			navigator.serviceWorker.addEventListener('controllerchange', () => {
-				window.location.reload();
-			});
-		}
-		// Also listen for Construct 3's update-ready broadcast
-		if ('BroadcastChannel' in window) {
-			const updateChannel = new BroadcastChannel('offline');
-			updateChannel.onmessage = (e) => {
-				if (e.data && e.data.type === 'update-ready') {
-					window.location.reload();
-				}
-			};
-		}
-	</script>
 
 </body> 
 </html>
